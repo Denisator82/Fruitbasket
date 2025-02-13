@@ -2,12 +2,7 @@
     @for(singlefruit of fruitlist; track singlefruit.name; let index = $index){
 
 
-        <app-singlefruit (mouseenter)="numLog(index)"[fruit]="singlefruit"></app-singlefruit>
+        <app-singlefruit (fruitname)="nameLog($event)" [fruit]="singlefruit"></app-singlefruit>
 
     }
 </div>
-
-<!-- Beispiele für Events (onclick und mouse over the Picture)
-(click)
-(mouseover)
-(mouseenter) -->
